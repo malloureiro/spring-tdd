@@ -42,6 +42,8 @@ public class ContactsManagementServiceUnitTest {
 		Mockito.when(contactRepository.save(Mockito.any(CustomerContact.class))).thenReturn(mockContact);
 		
 		CustomerContact empty = new CustomerContact();
+		empty.setFirstName("Maria");
+		
 		CustomerContact newContact = contactsService.add(empty);
 		
 		assertEquals(newContact.getFirstName(), mockContact.getFirstName());

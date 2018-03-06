@@ -41,14 +41,14 @@ public class ContactsManagementControllerUnitTest {
 	public void testAddContactHappyPath() throws Exception {
 		
 		CustomerContact mockContact = new CustomerContact();
-		mockContact.setFirstName("Paul");
-		mockContact.setLastName("Ramos");
+		mockContact.setFirstName("Louis");
+		mockContact.setLastName("Armstrong");
 		
 		when(contactsService.add(any(CustomerContact.class))).thenReturn(mockContact);
 		
 		CustomerContact newContact = new CustomerContact();
-		newContact.setFirstName("Paul");
-		newContact.setEmail("paul@email.com");
+		newContact.setFirstName("Louis");
+		newContact.setEmail("louis@email.com");
 		
 		mockMvc.perform(post("/addContact", newContact))
 				.andExpect(status().isOk())

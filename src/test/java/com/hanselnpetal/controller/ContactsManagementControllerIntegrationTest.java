@@ -18,14 +18,14 @@ import com.hanselnpetal.domain.CustomerContact;
 public class ContactsManagementControllerIntegrationTest {
 
 	@Autowired
-	ContactsManagementController contactsController;
+	private ContactsManagementController contactsController;
 	
 	@Test
 	public void testAddContactHappyPath() {
 		
 		CustomerContact newContact = new CustomerContact();
-		newContact.setFirstName("John");
-		newContact.setLastName("Ramos");
+		newContact.setFirstName("Luke");
+		newContact.setLastName("Cage");
 		
 		String response = contactsController.addContact(newContact);
 		

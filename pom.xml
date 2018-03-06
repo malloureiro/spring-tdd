@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.springframework</groupId>
-    <artifactId>tdd-02-02-project-begin</artifactId>
+    <artifactId>spring-tdd-project</artifactId>
     <version>0.1.0</version>
 
     <parent>
@@ -32,6 +32,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+			<groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+			<version>2.5.0</version>
+			<type>jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.springtestdbunit</groupId>
+			<artifactId>spring-test-dbunit</artifactId>
+			<version>1.2.0</version>
+			<scope>test</scope>
+		</dependency>
         <!-- end::test[] -->
     </dependencies>
 
